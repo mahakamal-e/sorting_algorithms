@@ -30,12 +30,11 @@ Big O notation is a way to express the upper bound on the asymptotic behavior of
 
 ### Common Time Complexities:
 
-O(1): Constant time complexity, indicating that the algorithm's runtime is constant regardless of the input size.
-
-O(log n): Logarithmic time complexity, typical for binary search algorithms.
-
-O(n): Linear time complexity, indicating that the algorithm's runtime grows linearly with the size of the input.
-
-O(n log n): Log-linear time complexity, common for efficient sorting algorithms like merge sort.
-
-O(n^2): Quadratic time complexity, typical for inefficient sorting algorithms like bubble sort.
+| Algorithm      | Time Complexity (Worst Case) | Time Complexity (Average Case) | Time Complexity (Best Case) |
+| --------------- | ---------------------------- | ------------------------------- | ---------------------------- |
+| Bubble Sort     | O(n^2)                       | O(n^2)                          | O(n)                         |
+| Selection Sort  | O(n^2)                       | O(n^2)                          | O(n^2)                       |
+| Insertion Sort  | O(n^2)                       | O(n^2)                          | O(n)                         |
+| Merge Sort      | O(n log n)                   | O(n log n)                      | O(n log n)                   |
+| Quick Sort      | O(n^2) (worst case)           | O(n log n) (average case)       | O(n log n) (best case)       |
+| Heap Sort       | O(n log n)                   | O(n log n)                      | O(n log n)                   |
