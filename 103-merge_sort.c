@@ -53,9 +53,9 @@ void merge_sort_recursive(int *array, size_t low, size_t high, int *temp_arr)
 	middle = (low + high) / 2;
 	if (high - low < 2)
 		return;
-	merge_sort_recursive(temp_array, low, middle, array);
-	merge_sort_recursive(temp_array, middle, high, array);
-	merge_subarrays(array, low, high, temp_array);
+	merge_sort_recursive(temp_arr, low, middle, array);
+	merge_sort_recursive(temp_arr, middle, high, array);
+	merge_subarrays(array, low, high, temp_arr);
 
 }
 
