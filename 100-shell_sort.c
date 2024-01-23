@@ -1,7 +1,7 @@
 #include "sort.h"
 /**
  * max_knuth_gap - aa function that calculates the maximum gap.
- * 
+ *
  * @size: size of array.
  *
  * Return: return the maximum gap.
@@ -22,7 +22,7 @@ size_t max_knuth_gap(size_t size)
  */
 void shell_sort(int *array, size_t size)
 {
-	size_t  i ,j;
+	size_t  i, j;
 	size_t gap = max_knuth_gap(size);
 	int temp;
 
