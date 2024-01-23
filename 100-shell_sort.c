@@ -26,7 +26,7 @@ void shell_sort(int *array, size_t size)
 	size_t gap = max_knuth_gap(size);
 	int temp;
 
-	if (!array || size == 0)
+	if (!array || size < 2)
 		return;
 	while (gap > 0)
 	{
@@ -46,4 +46,3 @@ void shell_sort(int *array, size_t size)
 	}
 
 }
-
