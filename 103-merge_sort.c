@@ -5,8 +5,8 @@
  *
  * @array: input array
  * @low: left index
- * @middle: middel index
  * @high: right index
+ * @temp_array: array to merge on original array.
  *
  */
 void merge_subarrays(int *array, size_t low, size_t high, int *temp_array)
@@ -43,10 +43,10 @@ void merge_subarrays(int *array, size_t low, size_t high, int *temp_array)
  * @array: arrry to be sorted.
  * @low: low index of the array in subarray
  * @high: high index of the array in subarray
- * @temp_array: array temp.
+ * @temp_arr: array temp.
  *
  */
-void merge_sort_recursive(int *array, size_t low, size_t high, int *temp_array)
+void merge_sort_recursive(int *array, size_t low, size_t high, int *temp_arr)
 {
 	size_t middle;
 
@@ -73,13 +73,13 @@ void merge_sort(int *array, size_t size)
 
 	if (array == NULL || size < 2)
 		return;
-	temp_array = malloc(sizeof(int) *size);
+	temp_array = malloc(sizeof(int) * size);
 	if (temp_array == NULL)
 		return;
 
 	for (i = 0; i < size; i++)
 	{
-		temp_array[i] = array [i];
+		temp_array[i] = array[i];
 	}
 	merge_sort_recursive(temp_array, 0, size, array);
 	free(temp_array);
