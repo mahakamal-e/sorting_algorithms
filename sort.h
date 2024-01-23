@@ -31,11 +31,8 @@ size_t partition(int *array, ssize_t low, ssize_t high, size_t size);
 void swap_func(int *a, int *b);
 void quicksort(int *array, ssize_t low, ssize_t high, size_t size);
 void merge_sort(int *array, size_t size);
-<<<<<<< HEAD
 void merge_subarrays(int *array, size_t low, size_t high, int *temp_array);
 void merge_sort_recursive(int *array, size_t low, size_t high, int * temp_array);
 
-=======
 void shell_sort(int *array, size_t size);
->>>>>>> d6e134f3a31c217fe942e3af2406dab8d73f93d9
 #endif
